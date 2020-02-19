@@ -1,0 +1,18 @@
+eps=input('Input error')
+x(1)=0;
+f(1)=0;
+k=input('initial guess' )
+for k = 1:100
+
+    k+=1
+    x(k+1)=exp(exp(-x(k)));
+    f(k)=exp(-x(k+1))-log(x(k+1));
+
+    if abs(f(k))<= eps
+        break
+    end
+end
+
+k  
+f(k) 
+x(k+1)
