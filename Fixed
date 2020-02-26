@@ -1,0 +1,9 @@
+function[r,k] = Fixed(xi,eps)
+k=0; fx=inf;
+while abs(f) > eps 
+    xi=exp(exp(-(xi)));
+    fx=exp(-xi)-log(xi)
+    k=k+1;
+end
+r=xi;
+end
